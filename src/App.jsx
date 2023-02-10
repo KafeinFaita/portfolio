@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Header from './pages/Header';
 import Skills from './pages/Skills';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <Header />
       <Skills />
     </div>
   )
