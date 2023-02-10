@@ -15,9 +15,9 @@ const projects = [
         tech: ["React.js", "Tailwind CSS"],
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia culpa itaque eaque impedit fugiat unde voluptas numquam eligendi, laudantium nobis."
     }, {
-        title: "Anime Listing Website",
+        title: "Christian School International Website",
         image: website,
-        tech: ["Node.js", "MySQL", "jQuery", "EJS"],
+        tech: ["Wordpress", "Divi Builder"],
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia culpa itaque eaque impedit fugiat unde voluptas numquam eligendi, laudantium nobis."
     }
     
@@ -25,7 +25,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="flex p-10 flex-col items-center border=">
+        <div className="flex p-10 flex-col items-center" id="projects ">
             <SectionTitle title="MY PROJECTS"/>
             <div className="md:flex md:gap-5 md:flex-wrap max-w-7xl justify-center">
                 {projects.map(project => 
