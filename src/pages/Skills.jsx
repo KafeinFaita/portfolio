@@ -1,3 +1,4 @@
+import SectionTitle from '../components/SectionTitle';
 import Html5Plain from 'devicons-react/lib/icons/Html5Plain';
 import Css3Plain from 'devicons-react/lib/icons/Css3Plain';
 import JavascriptOriginal from 'devicons-react/lib/icons/JavascriptOriginal';
@@ -46,14 +47,14 @@ const Skills = () => {
 
     return (
         <div className="p-10 flex flex-col items-center" id="skills">
-            <h2 className="text-xl font-bold mb-8">MY SKILLS</h2>
-            <div className="flex justify-center flex-wrap gap-10 max-w-3xl">
+            <SectionTitle title="MY SKILLS" />
+            <div className="flex justify-center flex-wrap gap-10 max-w-5xl">
             {skills.map(skill => {
                 let Icon = skill.icon;
                 return (
                 <div className='flex flex-col items-center w-16 text-center'>
                     <Icon size="50"/>
-                    <p>{skill.name}</p>
+                    <p className='pt-2'>{skill.name}</p>
                 </div>
                 ) 
             })}

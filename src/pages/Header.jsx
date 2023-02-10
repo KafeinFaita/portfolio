@@ -5,7 +5,7 @@ const Home = () => {
 
     console.log(picture)
     return (
-        <div className='flex flex-col items-center text-center md:flex-row md:justify-center p-5'>
+        <div className='flex flex-col items-center text-center md:flex-row md:justify-center p-5' id="home">
             
             <div className='my-8 w-60 h-60 rounded-full overflow-hidden md:my-0'>
                 <img src={picture} alt=""/>
