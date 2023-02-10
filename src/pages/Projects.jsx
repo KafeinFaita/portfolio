@@ -25,7 +25,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="flex p-10 flex-col items-center" id="projects ">
+        <div className="flex p-10 flex-col items-center" id="projects">
             <SectionTitle title="MY PROJECTS"/>
             <div className="md:flex md:gap-5 md:flex-wrap max-w-7xl justify-center">
                 {projects.map(project => 
