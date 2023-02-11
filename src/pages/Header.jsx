@@ -1,6 +1,5 @@
-import picture from '../assets/blank-profile-picture.webp';
 import headerImg from '../assets/header.jpg'
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Button from '../components/Button';
 
 const links = [ 
@@ -9,8 +8,6 @@ const links = [
 ]
 
 const Home = () => {
-
-    console.log(picture)
     return (
         <div className='text-center md:text-left' style={{backgroundImage: `url(${headerImg})`}} id="home">
             <div className='h-full w-full backdrop-blur bg-white/10 p-14 md:flex md:justify-center lg:py-28'>
