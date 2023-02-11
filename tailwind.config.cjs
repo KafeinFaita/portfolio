@@ -5,7 +5,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        header: "url('./src/assets/header.jpg)",
+      },
+      fontFamily: {
+        heading: ['Roboto Slab', 'serif'],
+        body: ['Poppins', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

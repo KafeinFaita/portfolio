@@ -35,7 +35,7 @@ const Skills = () => {
         { icon: RailsPlainWordmark, name: "Rails" },
         { icon: MongodbOriginal, name: "MongoDB" },
         { icon: GitOriginal, name: "Git" },
-        { icon: TailwindcssPlain, name: "Tailwind CSS" },
+        { icon: TailwindcssPlain, name: "Tailwind" },
         { icon: BootstrapOriginal, name: "Bootstrap" },
         { icon: PhpOriginal, name: "PHP" },
         { icon: CodeigniterPlain, name: "CodeIgniter" },
@@ -46,15 +46,15 @@ const Skills = () => {
     ]
 
     return (
-        <div className="p-10 flex flex-col items-center" id="skills">
+        <div className="flex flex-col items-center p-10 bg-gray-100/30 lg:py-16" id="skills" >
             <SectionTitle title="MY SKILLS" />
-            <div className="flex justify-center flex-wrap gap-10 max-w-5xl">
+            <div className="flex justify-center flex-wrap gap-12 max-w-5xl md:gap-16">
             {skills.map(skill => {
                 let Icon = skill.icon;
                 return (
-                <div className='flex flex-col items-center w-16 text-center'>
-                    <Icon size="50"/>
-                    <p className='pt-2'>{skill.name}</p>
+                <div className='flex flex-col items-center w-16 text-center bg-'>
+                    <Icon size="60"/>
+                    <p className='pt-2 md:text-xl'>{skill.name}</p>
                 </div>
                 ) 
             })}

@@ -25,12 +25,12 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="flex p-10 flex-col items-center" id="projects">
+        <div className="flex p-10 flex-col items-center lg:py-16" id="projects">
             <SectionTitle title="MY PROJECTS"/>
-            <div className="md:flex md:gap-5 md:flex-wrap max-w-7xl justify-center">
+            <div className="md:flex md:gap-10 md:flex-wrap max-w-7xl justify-center">
                 {projects.map(project => 
                    
-                <div className="flex flex-col items-center text-center p-7 max-w-sm mb-8 shadow-2xl shadow-gray-400">
+                <div className="flex flex-col items-center text-center p-7 max-w-sm mb-8 shadow-2xl shadow-gray-300">
                     <img src={project.image} alt="" className="w-56" />
                     <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
                     <div className="my-4">

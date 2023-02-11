@@ -16,14 +16,14 @@ const Navbar = () => {
     }
 
     return (
-        <div className="flex p-4 justify-between bg-gray-800 text-white">
-            <h1 className="font-bold text-2xl">LOGO</h1>
+        <div className="flex p-4 justify-between bg-teal-600 text-white">
+            <h1 className="font-bold text-2xl">{`<LYNYRD ANDRES />`}</h1>
             <div onClick={handleNav}>
                 {nav ? <AiOutlineClose className='md:hidden'/> : <AiOutlineMenu className='md:hidden'/>}
             </div>
 
             {/* mobile navbar */}
-            <div className={nav ? "fixed h-full border-r border-r-gray-800 w-[60%] bg-slate-800 -left-1 -top-4" : "fixed -left-96"}>
+            <div className={nav ? "fixed h-full border-r border-r-gray-800 w-[60%] bg-slate-800 -left-1 -top-4 z-10" : "fixed -left-96"}>
                 <ul className="pt-24">
 {links.map(link => 
                     <li className="p-5 border-b"><a href={link.url} onClick={handleNav}>{link.name}</a></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className='hidden py-1 md:flex'>
                 <ul className="flex">
 {links.map(link => 
-                    <li className='px-4'><a href={link.url}>{link.name}</a></li>
+                    <li className='px-4 font-medium hover:font-bold'><a href={link.url}>{link.name}</a></li>
 )}
                 </ul>
             </div>
