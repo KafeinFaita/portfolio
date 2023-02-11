@@ -3,7 +3,7 @@ import programmerImg from "../assets/programmer.png"
 
 const About = () => {
     return (
-        <div className="flex flex-col items-center p-10 lg:py-16 bg-gray-200/50">
+        <div className="flex flex-col items-center p-10 lg:py-16 bg-gray-200/50" id="about">
             <SectionTitle title="ABOUT ME" />
             <div className="flex justify-center items-center flex-wrap max-w-6xl md:gap-10">
                 <img src={programmerImg} alt="" className="mb-10 md:max-w-md lg:flex-1"/>

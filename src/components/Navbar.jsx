@@ -7,8 +7,7 @@ const Navbar = () => {
         { name: "Home", url: "#home" },
         { name: "Skills", url: "#skills" },
         { name: "Projects", url: "#projects" },
-        { name: "About", url: "#about" },
-        { name: "Contact", url: "#contact" }
+        { name: "About", url: "#about" }
     ];
 
     const handleNav = () => {
