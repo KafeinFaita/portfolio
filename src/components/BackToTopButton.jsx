@@ -1,13 +1,9 @@
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const BackToTopButton = () => {
 
     const [toTop, setToTop] = useState(false);
-
-    // useEffect(() => {
-        
-    // }, [])
 
     window.addEventListener("scroll", () => {
         window.scrollY > 100 ? setToTop(true) : setToTop(false);
@@ -21,7 +17,7 @@ const BackToTopButton = () => {
     }
 
     return (
-        toTop ? <button className="fixed bottom-8 right-8 text-4xl text-teal-600" id="top_button" onClick={handleScrollUp}><BsFillArrowUpCircleFill /></button> : null
+        toTop ? <button className="fixed bottom-5 right-3 text-4xl text-teal-600" id="top_button" onClick={handleScrollUp}><BsFillArrowUpCircleFill /></button> : null
     )
 }
 
