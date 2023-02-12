@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="flex p-4 justify-between bg-teal-600 text-white">
+        <div className="flex p-4 justify-between bg-gray-700 text-white">
             <h1 className="font-bold text-2xl">{`<LYNYRD ANDRES />`}</h1>
             <div onClick={handleNav}>
                 {nav ? <AiOutlineClose className='md:hidden'/> : <AiOutlineMenu className='md:hidden'/>}

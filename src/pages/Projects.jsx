@@ -35,7 +35,7 @@ const Projects = () => {
                     <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
                     <div className="my-4">
                     {project.tech.map(tech => 
-                        <span className="p-1.5 mx-1 bg-gray-800 rounded-lg text-white font-medium text-sm">{tech}</span>
+                        <span className="p-1.5 mx-1 bg-gray-700 rounded-lg text-white font-medium text-sm">{tech}</span>
                     )}
                     </div>
                     <p>{project.description}</p>

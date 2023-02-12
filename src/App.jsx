@@ -4,6 +4,7 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
 import About from './pages/About';
+import BackToTopButton from './components/BackToTopButton';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <About />
       <Footer />
+      <BackToTopButton />
     </div>
   )
 }

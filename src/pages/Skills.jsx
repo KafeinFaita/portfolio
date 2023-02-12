@@ -8,7 +8,7 @@ import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
 import MysqlOriginal from 'devicons-react/lib/icons/MysqlOriginal';
 import SqliteOriginal from 'devicons-react/lib/icons/SqliteOriginal';
 import RubyOriginal from 'devicons-react/lib/icons/RubyOriginal';
-import RailsPlainWordmark from 'devicons-react/lib/icons/RailsPlainWordmark';
+import RailsPlain from 'devicons-react/lib/icons/RailsPlain';
 import MongodbOriginal from 'devicons-react/lib/icons/MongodbOriginal';
 import GitOriginal from 'devicons-react/lib/icons/GitOriginal';
 import TailwindcssPlain from 'devicons-react/lib/icons/TailwindcssPlain';
@@ -32,7 +32,7 @@ const Skills = () => {
         { icon: MysqlOriginal, name: "MySQL" },
         { icon: SqliteOriginal, name: "SQLite" },
         { icon: RubyOriginal, name: "Ruby" },
-        { icon: RailsPlainWordmark, name: "Rails" },
+        { icon: RailsPlain, name: "Rails" },
         { icon: MongodbOriginal, name: "MongoDB" },
         { icon: GitOriginal, name: "Git" },
         { icon: TailwindcssPlain, name: "Tailwind" },
@@ -52,7 +52,7 @@ const Skills = () => {
             {skills.map(skill => {
                 let Icon = skill.icon;
                 return (
-                <div className='flex flex-col items-center w-16 text-center bg-'>
+                <div className='flex flex-col items-center w-16 text-center'>
                     <Icon size="60"/>
                     <p className='pt-2 md:text-xl'>{skill.name}</p>
                 </div>
