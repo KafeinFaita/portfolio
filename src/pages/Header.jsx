@@ -1,5 +1,5 @@
 import headerImg from '../assets/header.jpg'
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiFillFileText } from 'react-icons/ai';
 import Button from '../components/Button';
 
 const links = [ 
@@ -26,7 +26,7 @@ const Home = () => {
                         
                     </div>  
                     <p className='leading-8 max-w-4xl mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis cum sit at, earum vel vero autem harum assumenda doloribus porro distinctio repellat nam, animi quo necessitatibus nihil accusamus, numquam inventore pariatur quos! Ipsam, maiores culpa ipsum saepe ullam aspernatur.</p>
-                    <Button title="Resume" /> 
+                    <Button title="Resume" icon={<AiFillFileText className='inline-block'/>} /> 
                 </div>
                 
             </div>

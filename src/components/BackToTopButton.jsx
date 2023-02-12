@@ -21,7 +21,7 @@ const BackToTopButton = () => {
     }
 
     return (
-        toTop ? <span className="fixed bottom-8 right-8 text-4xl text-teal-600" id="top_button" onClick={handleScrollUp}><BsFillArrowUpCircleFill /></span> : null
+        toTop ? <button className="fixed bottom-8 right-8 text-4xl text-teal-600" id="top_button" onClick={handleScrollUp}><BsFillArrowUpCircleFill /></button> : null
     )
 }
 
