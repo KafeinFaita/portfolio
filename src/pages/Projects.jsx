@@ -1,12 +1,14 @@
 import SectionTitle from "../components/SectionTitle";
 import Button from "../components/Button";
-import website from '../assets/Website.jpg';
-import { AiOutlineLaptop, AiOutlineGithub } from 'react-icons/ai';
+import website from "../assets/Website.jpg";
+import yourAnimeList from "../assets/your_anime_list.png";
+import capcsi from "../assets/capcsi.png";
+import { AiOutlineLaptop, AiOutlineGithub } from "react-icons/ai";
 
 const projects = [
     {
         title: "Anime Listing Website",
-        image: website,
+        image: yourAnimeList,
         tech: ["Node.js", "MySQL", "jQuery", "EJS"],
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia culpa itaque eaque impedit fugiat unde voluptas numquam eligendi, laudantium nobis."
     }, {
@@ -16,7 +18,7 @@ const projects = [
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia culpa itaque eaque impedit fugiat unde voluptas numquam eligendi, laudantium nobis."
     }, {
         title: "Christian School International Website",
-        image: website,
+        image: capcsi,
         tech: ["Wordpress", "Divi Builder"],
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia culpa itaque eaque impedit fugiat unde voluptas numquam eligendi, laudantium nobis."
     }

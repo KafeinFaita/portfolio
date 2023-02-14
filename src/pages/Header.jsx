@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillFileText } from 'react-icons/ai';
 import Button from '../components/Button';
 
 const links = [ 
-    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres-ba630a244" },
+    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres" },
     { icon: AiFillGithub, url: "https://github.com/KafeinFaita" }
 ]
 
@@ -20,13 +20,13 @@ const Home = () => {
                         {links.map(link => {
                             let Icon = link.icon;
                             return (
-                                <a href={link.url} className='hover:text-teal-500'><Icon /></a>)
+                                <a href={link.url} className='hover:text-teal-500' target="_blank"><Icon /></a>)
                             })
                         }
                         
                     </div>  
-                    <p className='leading-8 max-w-4xl mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis cum sit at, earum vel vero autem harum assumenda doloribus porro distinctio repellat nam, animi quo necessitatibus nihil accusamus, numquam inventore pariatur quos! Ipsam, maiores culpa ipsum saepe ullam aspernatur.</p>
-                    <Button title="Resume" icon={<AiFillFileText className='inline-block'/>} /> 
+                    <p className='leading-8 max-w-4xl mb-5'>Passionate web developer with a strong foundation in frontend and backend development. Possesses a keen eye for detail, strong work ethic, and a willingness to learn and grow. Committed to creating engaging web experiences and contributing to the development of dynamic and innovative websites.</p>
+                    <Button title="Resume" icon={<AiFillFileText className='inline-block'/>} url="https://drive.google.com/file/d/1X6NeBMZlYZw2xQRY5zJJW0aIrR1gSdTy/view?usp=sharing" /> 
                 </div>
                 
             </div>

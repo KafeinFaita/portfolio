@@ -1,6 +1,6 @@
-const Button = ({ title, icon }) => {
+const Button = ({ title, icon, url }) => {
     return (
-        <a className="bg-teal-600 text-white p-2" href="#">{icon ? icon : null} {title}</a>
+        <a className="bg-teal-600 text-white p-2" href={url} target="_blank">{icon ? icon : null} {title}</a>
     )
 }
 

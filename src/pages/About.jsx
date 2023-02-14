@@ -7,7 +7,7 @@ const About = () => {
             <SectionTitle title="ABOUT ME" />
             <div className="flex justify-center items-center flex-wrap max-w-6xl md:gap-10">
                 <img src={programmerImg} alt="" className="mb-10 md:max-w-md lg:flex-1"/>
-                <p className="lg:flex-1 leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus id eius, tempora temporibus quaerat hic harum asperiores veritatis voluptates repudiandae nesciunt eos mollitia magnam laborum doloremque adipisci? Autem, quidem repudiandae ab unde sit mollitia quam. Saepe, harum repellendus fugit recusandae suscipit a fugiat earum temporibus id totam, expedita, quam rerum. Quidem ab harum assumenda, ullam facilis porro magni ex optio officiis excepturi aut eius amet maiores, officia ducimus soluta voluptate? Libero, quod possimus facilis ullam nobis laborum voluptatibus enim.</p>
+                <p className="lg:flex-1 leading-10">As a coding bootcamp graduate with a passion for coding, I am driven to pursue a career in the industry. Through my dedication to learning and practicing various programming languages, I have developed a strong foundation in both frontend and backend web development and am eager to apply my skills in a professional setting. I am a motivated and detail-oriented individual with a strong work ethic and a willingness to learn and grow within a team. I am excited to contribute my talents and gain hands-on experience in an entry-level web developer position.</p>
             </div>
         </div>
     )
