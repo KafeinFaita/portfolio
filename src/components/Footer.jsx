@@ -1,7 +1,7 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const links = [ 
-    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres-ba630a244" },
+    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres" },
     { icon: AiFillGithub, url: "https://github.com/KafeinFaita" }
 ]
 
