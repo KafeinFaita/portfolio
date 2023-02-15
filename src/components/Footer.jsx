@@ -1,8 +1,8 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const links = [ 
-    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres" },
-    { icon: AiFillGithub, url: "https://github.com/KafeinFaita" }
+    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres", key: "linkedin" },
+    { icon: AiFillGithub, url: "https://github.com/KafeinFaita", key: "github" }
 ]
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
                 {links.map(link => {
                     let Icon = link.icon;
                     return (
-                        <a href={link.url} target="_blank"><Icon /></a>
+                        <a href={link.url} target="_blank" key={link.key}><Icon /></a>
                     )
                 })}
             </div>

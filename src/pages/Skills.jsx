@@ -52,7 +52,7 @@ const Skills = () => {
             {skills.map(skill => {
                 let Icon = skill.icon;
                 return (
-                <div className='flex flex-col items-center w-16 text-center'>
+                <div className='flex flex-col items-center w-16 text-center' key={skill.name}>
                     <Icon size="60"/>
                     <p className='pt-2 md:text-xl'>{skill.name}</p>
                 </div>

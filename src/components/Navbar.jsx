@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className={nav ? "fixed h-full border-r border-r-gray-800 w-[60%] bg-slate-800 -left-1 -top-4 z-10" : "fixed -left-96"}>
                 <ul className="pt-24">
 {links.map(link => 
-                    <li className="p-5 border-b"><a href={link.url} onClick={handleNav}>{link.name}</a></li>
+                    <li className="p-5 border-b" key={link.name}><a href={link.url} onClick={handleNav}>{link.name}</a></li>
 )}
                 </ul>
             </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className='hidden py-1 md:flex'>
                 <ul className="flex">
 {links.map(link => 
-                    <li className='px-4 font-medium hover:font-bold'><a href={link.url}>{link.name}</a></li>
+                    <li className='px-4 font-medium hover:font-bold' key={link.name}><a href={link.url}>{link.name}</a></li>
 )}
                 </ul>
             </div>

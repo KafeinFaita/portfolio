@@ -3,11 +3,11 @@ import { AiFillLinkedin, AiFillGithub, AiFillFileText } from 'react-icons/ai';
 import Button from '../components/Button';
 
 const links = [ 
-    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres" },
-    { icon: AiFillGithub, url: "https://github.com/KafeinFaita" }
+    { icon: AiFillLinkedin, url: "https://www.linkedin.com/in/lynyrd-andres", key: "linkedin" },
+    { icon: AiFillGithub, url: "https://github.com/KafeinFaita", key: "github" }
 ]
 
-const Home = () => {
+const Header = () => {
     return (
         <div className='text-center md:text-left' style={{backgroundImage: `url(${headerImg})`}} id="home">
             <div className='h-full w-full backdrop-blur bg-white/10 p-14 md:flex md:justify-center lg:py-28'>
@@ -20,7 +20,7 @@ const Home = () => {
                         {links.map(link => {
                             let Icon = link.icon;
                             return (
-                                <a href={link.url} className='hover:text-teal-500' target="_blank"><Icon /></a>)
+                                <a href={link.url} className='hover:text-teal-500' target="_blank" key={link.key}><Icon /></a>)
                             })
                         }
                         
@@ -35,4 +35,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Header;
