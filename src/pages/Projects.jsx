@@ -4,6 +4,7 @@ import website from "../assets/Website.jpg";
 import yourAnimeList from "../assets/your_anime_list.png";
 import capcsi from "../assets/capcsi.png";
 import portfolio from "../assets/portfolio.png";
+import loaningApp from "../assets/loaning_app.png"
 import { AiOutlineLaptop, AiOutlineGithub } from "react-icons/ai";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -22,7 +23,15 @@ const projects = [
         url: "https://anime-listing.onrender.com/",
         githubUrl: "https://github.com/KafeinFaita/anime-listing",
         description: "A full stack web application to demonstrate my knowledge in backend development using Node.js. The application consumes a third-party API to provide data for users. Allows users to create an account and add various anime shows to their personal list to keep track, rate, and review shows that they have watched."
-    }, {
+    },
+    {
+        title: "Loan Management System (under construction)",
+        image: loaningApp,
+        url: "https://andres-loaning-app.onrender.com/",
+        tech: ["Node.js", "React.js", "Tailwind CSS", "MongoDB"],
+        description: "A full stack web application designed for loan management. Its features include: user creation, submitting loans, tracking payments. It has a role management feature that allows gives users specific privileges to access certain parts and features of the application. It is built using the MERN stack with Tailwind CSS."
+    },
+    {
         title: "Personal Portfolio",
         image: portfolio,
         tech: ["React.js", "Tailwind CSS", "SwiperJS"],
@@ -36,14 +45,6 @@ const projects = [
         tech: ["Wordpress", "Divi Builder"],
         description: "A website for a private school client, built using WordPress with Divi Builder and Gravity Forms plugin. Features include custom roles for each school personnel, form handling, student enrollment processing, document file generation and printing."
     }, 
-    {
-        title: "Loan Management System (ongoing)",
-        image: website,
-        url: "https://andres-loaning-app.onrender.com/dashboard/",
-        tech: ["Node.js", "React.js", "Tailwind CSS", "MongoDB"],
-        description: "Still under development, my end goal for this web app is a management system to track loans."
-    }
-    
 ]
 
 const Projects = () => {
