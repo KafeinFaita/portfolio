@@ -26,7 +26,7 @@ const Header = () => {
                         
                     </div>  
                     <p className='leading-8 max-w-4xl mb-5'>Passionate web developer with a strong foundation in frontend and backend development. Possesses a keen eye for detail, strong work ethic, and a willingness to learn and grow. Committed to creating engaging web experiences and contributing to the development of dynamic and innovative websites.</p>
-                    <Button title="Resume" icon={<AiFillFileText className='inline-block'/>} url="https://drive.google.com/file/d/1LI8Rt0C5tVI1zFP_s2688DEwRySE__HV/view?usp=sharing" /> 
+                    <Button title="Resume" icon={<AiFillFileText className='inline-block'/>} url="https://drive.google.com/file/d/1X6NeBMZlYZw2xQRY5zJJW0aIrR1gSdTy/view?usp=sharing" /> 
                 </div>
                 
             </div>
