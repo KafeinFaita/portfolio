@@ -25,13 +25,6 @@ const projects = [
         description: "A full stack web application to demonstrate my knowledge in backend development using Node.js. The application consumes a third-party API to provide data for users. Allows users to create an account and add various anime shows to their personal list to keep track, rate, and review shows that they have watched."
     },
     {
-        title: "Loan Management System (under construction)",
-        image: loaningApp,
-        url: "https://andres-loaning-app.onrender.com/",
-        tech: ["Node.js", "React.js", "Tailwind CSS", "MongoDB"],
-        description: "A full stack web application designed for loan management. Its features include: user creation, submitting loans, tracking payments. It has a role management feature that allows gives users specific privileges to access certain parts and features of the application. It is built using the MERN stack with Tailwind CSS."
-    },
-    {
         title: "Personal Portfolio",
         image: portfolio,
         tech: ["React.js", "Tailwind CSS", "SwiperJS"],
@@ -45,6 +38,13 @@ const projects = [
         tech: ["Wordpress", "Divi Builder"],
         description: "A website for a private school client, built using WordPress with Divi Builder and Gravity Forms plugin. Features include custom roles for each school personnel, form handling, student enrollment processing, document file generation and printing."
     }, 
+    {
+        title: "Loan Management System (under construction)",
+        image: loaningApp,
+        url: "https://andres-loaning-app.onrender.com/",
+        tech: ["Node.js", "React.js", "Tailwind CSS", "MongoDB"],
+        description: "A full stack web application designed for loan management. Its features include: user creation, submitting loans, tracking payments. It has a role management feature that allows gives users specific privileges to access certain parts and features of the application. It is built using the MERN stack with Tailwind CSS."
+    }
 ]
 
 const Projects = () => {
@@ -71,22 +71,22 @@ const Projects = () => {
                 
                 {projects.map(project => 
                     <SwiperSlide>
-                    <div className="flex flex-col items-center text-center p-7 max-w-sm shadow-gray-400 shadow-lg h-full mx-auto" key={project.title}>
-                        <img src={project.image} alt="" className="w-56" />
-                        <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
-                        <div className="my-4">
-                        {project.tech.map(tech => 
-                            <span className="p-1.5 mx-1 bg-gray-700 rounded-lg text-white font-medium text-sm" key={tech}>{tech}</span>
-                        )}
-                        </div>
-                        <p className="mb-5 text-left">{project.description}</p>
-                            <div className="flex gap-4 mt-auto">
-                                <Button title="Live Demo" icon={<AiOutlineLaptop className="inline-block" />} url={project.url} />
-
-                                {project.title !== "Christian School International" ? <Button title="Code" icon={<AiOutlineGithub className="inline-block"/>} url={project.githubUrl} /> : null}
-                                
+                        <div className="flex flex-col items-center text-center p-7 max-w-sm shadow-gray-400 shadow-lg h-full mx-auto" key={project.title}>
+                            <img src={project.image} alt="" className="w-96" />
+                            <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
+                            <div className="my-4">
+                            {project.tech.map(tech => 
+                                <span className="p-1.5 mx-1 bg-gray-700 rounded-lg text-white font-medium text-sm" key={tech}>{tech}</span>
+                            )}
                             </div>
-                    </div>
+                            <p className="mb-5 text-left">{project.description}</p>
+                                <div className="flex gap-4 mt-auto">
+                                    <Button title="Live Demo" icon={<AiOutlineLaptop className="inline-block" />} url={project.url} />
+
+                                    {project.title !== "Christian School International" ? <Button title="Code" icon={<AiOutlineGithub className="inline-block"/>} url={project.githubUrl} /> : null}
+                                    
+                                </div>
+                        </div>
                     </SwiperSlide>
                 )}
                 </Swiper>
